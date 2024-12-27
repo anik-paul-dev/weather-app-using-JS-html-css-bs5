@@ -1,0 +1,168 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('wf.jpg') no-repeat;
+    background-color: #f7f7f7;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Background for Weather Section */
+.weather-background {
+    background: url('wf.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    padding: 60px 0;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Title and Header */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.lead {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar */
+.input-group {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-group .form-control {
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.input-group .btn {
+    border-radius: 25px;
+    padding: 15px 20px;
+    background-color: #ff7c7c;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group .btn:hover {
+    background-color: #ffafcc;
+}
+
+/* Weather Cards Styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    flex: 1 1 200px;
+    max-width: 270px;
+    min-height: 180px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Specific Card Colors */
+.card.weather {
+    background-color: #ffeb3b; /* Light Yellow for Weather */
+}
+
+.card.temperature {
+    background-color: #2196f3; /* Blue for Temperature */
+}
+
+.card.feels-like {
+    background-color: #ff5722; /* Orange for Feels Like */
+}
+
+.card.humidity {
+    background-color: #4caf50; /* Green for Humidity */
+}
+
+.card.pressure {
+    background-color: #9c27b0; /* Purple for Pressure */
+}
+
+.card.visibility {
+    background-color: #00bcd4; /* Cyan for Visibility */
+}
+
+.card.wind-speed {
+    background-color: #ff9800; /* Amber for Wind Speed */
+}
+
+.card.sunrise {
+    background-color: #ff5722; /* Orange for Sunrise */
+}
+
+.card.sunset {
+    background-color: #673ab7; /* Deep Purple for Sunset */
+}
+
+.card-body h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card-body p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .input-group .form-control {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    .input-group .btn {
+        font-size: 1rem;
+        padding: 12px 18px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: static;
+    }
+}
